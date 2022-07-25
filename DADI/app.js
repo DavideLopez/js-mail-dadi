@@ -8,3 +8,30 @@ console.log('dadi')
 let result = document.getElementById('result')
 
 let bttn = document.getElementById('bttn')
+
+bttn.addEventListener('click', 
+function () {
+
+    //dado lanciato dall'utente
+    var punteggioUtente = Math.floor(Math.random() * 6 + 1);
+    console.log('utente', punteggioUtente);
+
+    //dado lanciato dal computer
+    var PunteggioComputer = Math.floor(Math.random() * 6 + 1);
+    console.log('computer', PunteggioComputer);
+
+    if(punteggioUtente < PunteggioComputer) {
+        result.innerHTML = 'hai perso!! il tuo numero è ' + punteggioUtente + ' il punteggio del computer è ' + PunteggioComputer   
+    } else if (punteggioUtente > PunteggioComputer) {
+        result.innerHTML = 'hai vinto!! il tuo numero è ' + punteggioUtente + ' il punteggio del computer è ' + PunteggioComputer
+    } else {
+        result.innerHTML = "ops.... il punteggio è di parità!"
+    }
+      
+}
+
+
+
+
+
+)
