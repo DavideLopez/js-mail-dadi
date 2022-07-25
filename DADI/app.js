@@ -24,7 +24,7 @@ function () {
         result.innerHTML = 'hai perso!! il tuo numero è ' + punteggioUtente + ' il punteggio del computer è ' + PunteggioComputer   
     } else if (punteggioUtente > PunteggioComputer) {
         result.innerHTML = 'hai vinto!! il tuo numero è ' + punteggioUtente + ' il punteggio del computer è ' + PunteggioComputer
-    } else {
+    } else if ( punteggioUtente === PunteggioComputer) {
         result.innerHTML = "ops.... il punteggio è di parità!"
     }
       
