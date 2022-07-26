@@ -7,6 +7,7 @@ console.log('MAIL')
 //chiedi all'utente il suo indirizzo email
 let mailUtente = prompt('inserisci il tuo indirizzo Email, per favore :)');
 const emailArray = ["geraltdirivia@wolf.com", "test@test.com", "maurone@gmail.com", "pancopinco@gmail.com"]
+console.log(emailArray)
 
 let answer = document.getElementById("answer")
 
