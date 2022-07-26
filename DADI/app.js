@@ -20,18 +20,13 @@ function () {
     var PunteggioComputer = Math.floor(Math.random() * 6 + 1);
     console.log('computer', PunteggioComputer);
 
-    if(punteggioUtente < PunteggioComputer) {
+    if (punteggioUtente < PunteggioComputer) {
         result.innerHTML = 'hai perso!! il tuo numero è ' + punteggioUtente + ' il punteggio del computer è ' + PunteggioComputer   
     } else if (punteggioUtente > PunteggioComputer) {
         result.innerHTML = 'hai vinto!! il tuo numero è ' + punteggioUtente + ' il punteggio del computer è ' + PunteggioComputer
     } else if ( punteggioUtente === PunteggioComputer) {
         result.innerHTML = "ops.... il punteggio è di parità!"
     }
-      
+      console.log(result.innerHTML)
 }
-
-
-
-
-
 )
